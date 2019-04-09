@@ -22,3 +22,15 @@
 * If page j with importance rj has n out-links, each link gets rj/n votes
 * Page j's own importance = sum of the votes of its in-links
 * A page is important if it's pointed to by other important pages
+
+Formula:
+![Formula](https://github.com/vimde/Mining-Massive-Datasets/blob/master/Module%202-%20PageRank/Images/Formula.PNG)
+   
+Example:
+![Example](https://github.com/vimde/Mining-Massive-Datasets/blob/master/Module%202-%20PageRank/Images/Example.PNG)
+
+* 3 equations, 3 unknowns and no constants. There could be infinite solutions to this sort of equations.
+* An additional constraint forces it to be unique
+* ry + rm + ra = 1
+* We can use any Linear System equation solving method such as Gaussian Elimination but it works well for small graphs and not for huge ones
+* So we need a different formulation
